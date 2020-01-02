@@ -20,6 +20,6 @@ public class CustomerSpringSocialConfigure extends SpringSocialConfigurer{
     protected <T> T postProcess(T object) {
         SocialAuthenticationFilter filter = (SocialAuthenticationFilter)super.postProcess(object);
         filter.setFilterProcessesUrl(filterProcessesUrl);
-        return (SocialAuthenticationFilter)filter;
+        return (T)filter;
     }
 }

@@ -23,6 +23,7 @@ public class QQServiceProvider extends AbstractOAuth2ServiceProvider<QQ>{
 
     public QQServiceProvider(String appId,String appSecret){
         super(new OAuth2Template(appId,appSecret,URL_AUTHORIZE,URL_ACCESSTOKEN));
+        this.appId = appId;
     }
 
     //整个应用对于qq来说只有一个
