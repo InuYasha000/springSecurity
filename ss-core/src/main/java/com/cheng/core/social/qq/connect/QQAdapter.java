@@ -32,7 +32,7 @@ public class QQAdapter implements ApiAdapter<QQ>{
     //connection和api数据做一个适配
     @Override
     public void setConnectionValues(QQ qq, ConnectionValues connectionValues) {
-        QQUserInfo qqUserInfo = qq. getUserInfo();
+        QQUserInfo qqUserInfo = qq.getUserInfo();
         //用户名字
         connectionValues.setDisplayName(qqUserInfo.getNickname());
         //头像

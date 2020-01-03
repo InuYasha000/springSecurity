@@ -16,6 +16,7 @@ import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.filter.OncePerRequestFilter;
 
+import javax.annotation.Resource;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -42,6 +43,7 @@ public class ValidateCodeFilter extends OncePerRequestFilter implements Initiali
 
     private SessionStrategy sessionStrategy = new HttpSessionSessionStrategy();
 
+    @Resource
     private CoreSecurityProperties coreSecurityProperties;
 
     private Set<String> urls = new HashSet<>();

@@ -20,7 +20,7 @@ import javax.annotation.Resource;
 
 @Configuration
 //qq连接工厂
-@ConditionalOnProperty(value = "com.cheng.social.qq",name = "app-id")
+@ConditionalOnProperty(prefix = "com.cheng.social.qq",name = "app-id")
 public class QQAutoConfig extends SocialAutoConfigurerAdapter{
 
     @Resource

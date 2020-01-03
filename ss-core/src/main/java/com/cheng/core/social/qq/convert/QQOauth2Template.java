@@ -21,6 +21,7 @@ public class QQOauth2Template extends OAuth2Template{
     public QQOauth2Template(String clientId, String clientSecret, String authorizeUrl, String accessTokenUrl){
         super(clientId, clientSecret, authorizeUrl, (String)null, accessTokenUrl);
         //ss原生代码就已经实现了oauth2协议自带的五个参数，只是这个参数为true时才会携带
+        //exchangeForAccess携带
         setUseParametersForClientAuthentication(true);
     }
 

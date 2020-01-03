@@ -5,10 +5,11 @@ import org.springframework.boot.autoconfigure.social.SocialProperties;
 
 /**
  * @Auther: cheng
- * @Date: 2019/12/27 14:46
+ * @Date: 2020/1/2 18:16
  * @Description:
  */
 @Data
-public class QQProperties extends SocialProperties{
-    private String providerId = "callback.do";
+public class WXProperties extends SocialProperties{
+
+    private String providerId = "wx";
 }

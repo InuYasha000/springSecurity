@@ -11,5 +11,7 @@ import lombok.Data;
 public class SocialProperties {
     private QQProperties qq = new QQProperties();
 
-    private String filterProcessesUrl = "/auth";
+    private String filterProcessesUrl = "/qqLogin";
+
+    private WXProperties wx = new WXProperties();
 }

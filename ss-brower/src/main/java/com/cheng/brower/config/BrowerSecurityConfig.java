@@ -96,7 +96,7 @@ public class BrowerSecurityConfig extends WebSecurityConfigurerAdapter{
                 //登录页面不需要授权，不然一直死循环
                 .antMatchers("/authentication/**",
                         coreSecurityProperties.getBrower().getLoginPage(),
-                        "/createCode/*").permitAll()
+                        "/createCode/*","/qqLogin/*").permitAll()
                 .anyRequest().authenticated()
                 //解决跨域问题
                 .and().csrf().disable()
